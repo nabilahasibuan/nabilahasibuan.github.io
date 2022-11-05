@@ -1,97 +1,82 @@
-@media screen and (max-width: 480px)
+/* this is pc */
+@media screen and (min-width: 1280px)
 {
 	body
 	{
 		font-family: Arial, Helvetica, sans-serif;
 		background-color: #F0F;
 	}
+	
+	#header1
+	{
+		background-color: black;
+		color: white;
+	}
+	
+	#header2
+	{
+		background-color: gray;
+	}
+	
 	nav
 	{
+		display: flex;
 		background-color: blue;
 		margin-bottom: 3%;
 		margin-top: 3%;
+		padding: 0.5px;
+		word-spacing: 100px;
+		color: white;
 	}
-	ul 
+	
+	ul
 	{
 		list-style-type: none;
 		text-align: center;
 	}
+	
 	.navigationOption
 	{
 		color: white;
 	}
-	#header1
+	
+	#flexParent
 	{
-		background-color: #808B96;
+		/* display: flex; */
+		flex-wrap: wrap;
+		background-color: #29ff71 ;
+		padding: 1em;
 	}
-	#header2
+	
+	#flexKids
 	{
-		background-color: #BFC9CA;
+		flex-basis: 80%;
 	}
-	#pic1, #pic2, #pic3
+	
+	.imgFlex
 	{
 		width: 500px;
-		float: right;
-		clear: both;
-		margin-left: 3%;
+
 	}
-	.MainArticle
-	{
-		float: left;
-	}
-	#article
-	{
-		margin: 50px auto;
-		max-width: 718px;
-	}
-	.caption
-	{
-		float: right;
-		clear: both;
-		margin-top: 1%;
-	}
-	#aside	
-	{
-		width: 20%;
-		max-width: 150px;
-		min-width: 100px;
-		float: left;
-		position: fixed;
-	}
-	.cookie-card
-	{
-		margin: 10px;
-		padding: 10px;
-		box-sizing: border-box;
-		font-family: sans-serif;
-		position: fixed;
-		bottom: 2em;
-		right: 2em;
-		color: #FFF;
-		background-color: #FA0;
-		opacity: 50%;
-	}
-	footer
-	{
-		background: black;
-		color: white;
-		clear: both;
-		padding: 10px;
-	}
+	
 }
 
-@media screen and (min-width: 481px) and (max-width:1179px)
+/* this is tablet */
+@media screen and (min-width: 481px) and (max-width:1279px)
 {
 	body
 	{
+		font-family: Arial, Helvetica, sans-serif;
 		background-color: #F00;
 	}
 }
 
-@media screen and (min-width: 1280px)
+/* this is mobile */
+@media screen and (max-width: 480px)
 {
 	body
 	{
+		font-family: Arial, Helvetica, sans-serif;
 		background-color: #0F0;
 	}
 }
