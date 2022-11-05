@@ -1,8 +1,9 @@
-@media screen and (max-width: 719px)
+@media screen and (max-width: 480px)
 {
 	body
 	{
 		font-family: Arial, Helvetica, sans-serif;
+		background-color: #F0F;
 	}
 	nav
 	{
@@ -15,7 +16,7 @@
 		list-style-type: none;
 		text-align: center;
 	}
-	.navigation
+	.navigationOption
 	{
 		color: white;
 	}
@@ -29,7 +30,7 @@
 	}
 	#pic1, #pic2, #pic3
 	{
-		width: 300px;
+		width: 500px;
 		float: right;
 		clear: both;
 		margin-left: 3%;
@@ -49,11 +50,50 @@
 		clear: both;
 		margin-top: 1%;
 	}
-	aside	
+	#aside	
 	{
-		float: right;
+		width: 20%;
+		max-width: 150px;
+		min-width: 100px;
+		float: left;
+		position: fixed;
+	}
+	.cookie-card
+	{
+		margin: 10px;
+		padding: 10px;
+		box-sizing: border-box;
+		font-family: sans-serif;
+		position: fixed;
+		bottom: 2em;
+		right: 2em;
+		color: #FFF;
+		background-color: #FA0;
+		opacity: 50%;
+	}
+	footer
+	{
+		background: black;
+		color: white;
+		clear: both;
+		padding: 10px;
 	}
 }
-@media screen and (min-width: 720px) and (max-width: 929px)
-@media screen and (min-width: 930px)
+
+@media screen and (min-width: 481px) and (max-width:1179px)
+{
+	body
+	{
+		background-color: #F00;
+	}
+}
+
+@media screen and (min-width: 1280px)
+{
+	body
+	{
+		background-color: #0F0;
+	}
+}
+
 
