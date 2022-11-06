@@ -93,6 +93,44 @@
 		height: 281.25px;
 	}
 	
+	#cookie-card
+	{
+		padding: 1.5em;
+		font-family: sans-serif;
+		position: fixed;
+		bottom: 2em;
+		right: 2em;
+		width: 300px;
+		color: #FFF;
+		background-color: #FA0;
+		opacity: 50%;
+	}
+	
+	.cookie-title
+	{
+		font-size: 1.6em;
+		letter-spacing: 0.4px;
+		margin-bottom: 0.5em;
+	}
+	
+	.cookie-info
+	{
+		line-height: 1.4em;
+		letter-spacing: 0.4px;
+		margin-bottom: 2em;
+	}
+	
+	.cookie-cta
+	{
+		border: none;
+		outline: none;
+		padding: 0.8em 1.5em;
+		margin-right: 0.5em;
+		font-size: 1.1em;
+		font-weight: bold;
+		cursor: pointer;
+		transition: background-color 0.4s;
+	}
 }
 
 /* this is tablet*/
