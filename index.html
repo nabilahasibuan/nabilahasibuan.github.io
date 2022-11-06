@@ -14,128 +14,96 @@
 		/>
 		
 		<title>
-				Home Page
+				Tech with Sports - Homepage
 		</title>
 	</head>
-	
+
 	<body>
-		<header>
-			<h1 id="header1">Tech with Sports</h1>
-			<h2 id="header2">Witness the change in Sports</h2>
-			<nav id="flexNav">
-				<ul>
-					<li>
-						<a class="navigationOption" href="product.html">Product</a> 
-						<a class="navigationOption" href="pricing.html">Pricing</a> 
-						<a class="navigationOption" href="contact.html">Contact</a>
-					</li>
-				</ul>
-			</nav>
+		<header id="flex-container-header">
+			<img class="flex-logo" src="img/logo.png" title="Logo" alt="website logo"></img>
+			<h1 class="flex-header1"></img>Tech with Sports</h1>
+			<h2 class="flex-header2">Witness the change in Sports</h2>
 		</header>
 		
-		<section id="flexParent">
-			<section id="flexKids">
-				<article class="flexMainArticle" id="article1">
-					<h1 class="flexArticleHeaders"> Edge Detector </h1>
-					<p>
-						Edge Detector from Hawk-Eye Innovations is a computer vision system that visually tracks the trajectory of the ball and displays a profile of its statistically most likely path as a moving image in a variety of sports. Instead of relying on the players instincts, they use this technology to decide fairly whether or no the ball hit the line. The cameras capture the ball during the ball transistion at a rate of up to 340 frames per second. At the same time, an algorithm processes and determines the ball's trajectory using this information. 
-					</p>
-					<figure>
-						<a href="https://www.hawkeyeinnovations.com/" target="_blank">
-						<img class="imgFlex"
-							src="img/edgedetector.jpg"
-							title="Edge Detector" alt="edge detector in tennis"
-						/>
-						</a>
-						<figcaption class="caption">
-							&copy; How It Works
-						</figcaption>
-					</figure>
-					<p class="flexArticleFooters">
-						<a href="https://www.hawkeyeinnovations.com">More Info</a>
-					</p>
-				</article>
-			
-				<article class="flexMainArticle" id="article2">
-					<h1 class="flexArticleHeaders"> Virtual Reality (VR) </h1>
-					<p>	
-						A virtual environment that is interactive and immerses you in a new world through the use of cameras, sensors, joysticks, or costumes is known a Virtual Reality. It is used to create realistic rugby simulations of high balls, first-phase attacks, and line-outs. Thiscan help gamers improve their visualization abillities and cognitive learning. Virtual things and characters can interact with eachother, allowing the two worlds to communicate with each other. 
-					</p>
-					<figure>
-						<a href="https://www.playtouchrugbyleague.co.uk/how-is-vr-being-utilized-in-rugby/" target="_blank">
-						<img class="imgFlex"
-							src="img/virtualreality.png"
-							title="Virtual Reality" alt="virtual realiy for practicing in rugby"
-						/>
-						</a>
-						<figcaption class="caption">
-							&copy; Sport Techie
-						</figcaption>
-					</figure>
-					<p class="flexArticleFooters">
-						<a href="https://www.coolblue.nl/en/vr-gear">Order Product</a>
-					</p>
-				</article>
-			
-				<article class="flexMainArticle" id="article3">
-					<h1 class="flexArticleHeaders"> Flying drones </h1>
-					<p>
-						Whenever we watch a sport, we frequently see several camera angles. The most incredible is when the camera flys and you can see the entirestadium or even a close-up of your favorite athlete. It is all because of flying drones and spider cams that are operated by TV broadcasters, who provide breathtaking images for our televisions. They are used to take pictures from very near to the ground to the skyline and offer a 36-degree viewing angle. 
-					</p>
-					<figure>
-						<a href="https://droneland.nl/drones" target="_blank">
-						<img class="imgFlex"
-							src="img/flyingdrones.jpg"
-							title="Flying Drones" alt="flying drones in sports"
-						/>
-						</a>
-						<figcaption class="caption">
-							&copy; Rude Baguette
-						</figcaption>
-					</figure>
-					<p class="flexArticleFooters">
-						<a href="https://www.coolblue.nl/en/drones?redirect=drones">Order Product</a>
-					</p>
-				</article>
-			</section>
+		<nav id="flex-container-nav">
+			<ul id="flex-ul">
+				<li>
+					<a href="#" class="flex-list">Product</a>
+					<a href="#" class="flex-list">Pricing</a>
+					<a href="#" class="flex-list">Contact</a>
+				</li>
+			</ul>
+		</nav>
+		
+		<section id="flex-container-video">
+			<video width="950" height="534.38" loop autoplay muted>
+				<source src="vid/Home-promotion-video.mp4" type="video/mp4">
+				<source src="vid/Home-promotion-video.ogg" type="video/ogg">
+			</video>
 		</section>
-		<aside id="flexAside">
-			<h3> See the Future </h3>
+		
+		<section id="flex-container-parent">
+			<section id="1st-container-child-articles">
+				<section class="content-container">
+					<article class="flex-article1">
+						<header> 
+							<h4>Edge Detector</h4> 
+						</header>
+						<p>
+							Edge Detector from Hawk-Eye Innovations is a computer vision system that visually tracks the trajectory of the ball and displays a profile of its statistically most likely path as a moving image in a variety of sports. Instead of relying on the players instincts, they use this technology to decide fairly whether or no the ball hit the line. The cameras capture the ball during the ball transistion at a rate of up to 340 frames per second. At the same time, an algorithm processes and determines the ball's trajectory using this information. 
+						</p>
+					</article>
+					<figure>
+						<img src="img/edgedetector.jpg" title="Edge Detector" alt="edge detector in tennis"/>
+						<figcaption>&copy; How It Works</figcaption>
+					</figure>
+				</section>
+				<section class="content-container">
+					<article class="flex-article2">
+						<h4>Virtual Reality (VR)</h4>
+						<p>
+							A virtual environment that is interactive and immerses you in a new world through the use of cameras, sensors, joysticks, or costumes is known a Virtual Reality. It is used to create realistic rugby simulations of high balls, first-phase attacks, and line-outs. Thiscan help gamers improve their visualization abillities and cognitive learning. Virtual things and characters can interact with eachother, allowing the two worlds to communicate with each other.
+						</p>
+					</article>
+					<figure>
+						<img class="flex-article-img" src="img/virtualreality.png"title="Virtual Reality" alt="VR being used for practicing in rugby">
+						<figcaption>&copy; Sport Techie</figcaption>
+					</figure>
+				</section>
+				<section class="content-container">
+					<article class="flex-article3">
+						<h4>Flying Drones</h4>
+						<p>
+							Whenever we watch a sport, we frequently see several camera angles. The most incredible is when the camera flys and you can see the entirestadium or even a close-up of your favorite athlete. It is all because of flying drones and spider cams that are operated by TV broadcasters, who provide breathtaking images for our televisions. They are used to take pictures from very near to the ground to the skyline and offer a 36-degree viewing angle. 
+						</p>
+					</article>
+					<figure> 
+						<img class="flex-article-img" src="img/flyingdrones.jpg" title="Flying Drones" alt="flying drones in sports"> 
+						<figcaption>&copy; Rude Baguette</figcaption> 
+					</figure>
+				</section>
+			</section>
+			<aside id="2nd-container-child-aside">
+				<h3>See the Future</h3>
 				<ol>
-					<li>
-						Mobility: Intelligent, Sustainable and as-a-service
-					</li>
-					<li>
-						Smart and Sustainable buildings and infrastructures
-					</li>
-					<li>
-						City operations through AI
-					</li>
-					<li>
-						Cybersecurity and Privacy Awareness in the city
-					</li>
-					<li>
-						Surveillance and Predictive Policing through AI
-					</li>
-				</ol>	
-		</aside>
-		<section>
-			<footer>
-				&copy; Nabila Hasibuan
-			</footer>
+					<li>Mobility: Intelligent, Sustainable and as-a-service</li>
+					<li>Smart and Sustainable buildings and infrastructures</li>
+					<li>City operations through AI</li>
+					<li>Cybersecurity and Privacy Awareness in the city</li>
+					<li>Surveillance and Predictive Policing through AI</li>
+				</ol>
+			</aside>
 		</section>
-			<section class="cookie-card">
-				<p 
-					class="title">
-					Cookies content
-				</p>
-				<p
-					class="info">
-					By using this website, you automatically accept that we use cookies. 
-					<a href="#">Read More</a>
-				</p>
-				<button class="cta">Accept all</button>
-				<a href="#" class="settings">Cookies settings</a>
-			</section>
+		
+		<section>
+			<h3>Cookies card</h3>
+			<p>
+				By using this website, you automatically accept that we use cookies. <a href="#">Read more</a>
+			</p>
+			<button>Accept all</button> <a href="#">Cookies settings</a>
+		</section>
+		<footer>&copy; Nabila Hasibuan</footer>
 	</body>
+			
+			
 			

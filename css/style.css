@@ -1,84 +1,220 @@
-/* this is pc */
+/* this is pc*/
 @media screen and (min-width: 1280px)
 {
 	body
 	{
 		font-family: Arial, Helvetica, sans-serif;
-		background-color: #F0F;
+		background-color: #bbe6ff ;
 	}
 	
-	#header1
-	{
-		background-color: black;
-		color: white;
-	}
-	
-	#header2
-	{
-		background-color: gray;
-	}
-	
-	nav
+	#flex-container-header
 	{
 		display: flex;
-		background-color: blue;
-		margin-bottom: 3%;
-		margin-top: 3%;
-		padding: 0.5px;
-		word-spacing: 100px;
-		color: white;
-	}
-	
-	ul
-	{
-		list-style-type: none;
+		flex-direction: column;
 		text-align: center;
 	}
 	
-	.navigationOption
+	.flex-logo
 	{
+		width: 35px;
+		height: 35px;
+	}
+	
+	.flex-header1
+	{
+		background-color: #4e7198;
 		color: white;
+		padding: 5px;
+		margin-bottom: 0.5em;
 	}
 	
-	#flexParent
+	.flex-header2
 	{
-		/* display: flex; */
-		flex-wrap: wrap;
-		background-color: #29ff71 ;
-		padding: 1em;
+		background-color: #000000;
+		color: white;
+		padding: 5px;
+		margin-top: 0;
 	}
 	
-	#flexKids
+	#flex-container-nav
 	{
-		flex-basis: 80%;
+		display: flex;
+		justify-content: center;
 	}
 	
-	.imgFlex
+	#flex-ul
+	{
+		list-style-type: none;
+		margin-bottom: 3em;
+	}
+	
+	.flex-list
+	{
+		background-color: #4e7198;
+		color: white;
+		padding: 15px;
+		margin: 1em;
+	}
+	
+	#flex-container-video
+	{
+		display: flex;
+		justify-content: center;
+		margin-bottom: 4em;
+	}
+	
+	#flex-container-parent
+	{
+		display: flex;
+		/* background-color: yellow; */
+	}
+	
+	#1st-container-child-articles
+	{
+		
+	}
+	
+	#flex-container-parent > #2nd-container-child-aside
+	{
+		
+	}
+	
+	.content-container
+	{
+		display: flex;
+		flex: wrap;
+		align-items: center;
+		/* background-color: lightgreen; */
+	}
+	
+	img
 	{
 		width: 500px;
-
+		height: 281.25px;
 	}
 	
 }
 
-/* this is tablet */
-@media screen and (min-width: 481px) and (max-width:1279px)
+/* this is tablet*/
+@media screen and (min-width: 481px) and (max-width: 1279px)
 {
 	body
 	{
 		font-family: Arial, Helvetica, sans-serif;
-		background-color: #F00;
+		background-color: #ffbbdd  ;
+	}
+	
+	#flex-container-header
+	{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	
+	.flex-logo
+	{
+		width: 35px;
+		height: 35px;
+	}
+	
+	.flex-header1
+	{
+		background-color: #4e7198;
+		color: white;
+		padding: 5px;
+		margin-bottom: 0.5em;
+	}
+	
+	.flex-img-logo
+	{
+		width: 35px;
+		height: 35px;
+		justify-content: flex-start;
+	}
+	
+	.flex-header2
+	{
+		background-color: #000000;
+		color: white;
+		padding: 5px;
+		margin-top: 0;
+	}
+	
+	#flex-container-nav
+	{
+		display: flex;
+		justify-content: center;
+	}
+	
+	#flex-ul
+	{
+		list-style-type: none;
+		margin-bottom: 3em;
+	}
+	
+	.flex-list
+	{
+		background-color: #4e7198;
+		color: white;
+		padding: 15px;
+		margin: 1em;
 	}
 }
 
-/* this is mobile */
+/* this is mobile*/
 @media screen and (max-width: 480px)
 {
 	body
 	{
 		font-family: Arial, Helvetica, sans-serif;
-		background-color: #0F0;
+		background-color: #d9bbff ;
+	}
+	
+	#flex-container-header
+	{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	
+	.flex-logo
+	{
+		width: 35px;
+		height: 35px;
+	}
+	
+	.flex-header1
+	{
+		background-color: #4e7198;
+		color: white;
+		padding: 5px;
+		margin-bottom: 0.5em;
+	}
+	
+	.flex-img-logo
+	{
+		width: 35px;
+		height: 35px;
+		justify-content: flex-start;
+	}
+	
+	.flex-header2
+	{
+		background-color: #000000;
+		color: white;
+		padding: 5px;
+		margin-top: 0;
 	}
 }
 
 
+
+.flexParent
+{
+	display: flex;
+}
+
+.flexParent > .flexChild > .flexGrandkid
+{
+	float: right;
+}
