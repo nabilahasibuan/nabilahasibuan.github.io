@@ -2,6 +2,10 @@
 
 @media screen and (min-width: 1280px)
 {
+	/* -----------------------------PC INDEX PAGE------------------------------- */
+	/* -----------------------------PC INDEX PAGE------------------------------- */
+	/* -----------------------------PC INDEX PAGE------------------------------- */
+	
 	body
 	{
 		font-family: Arial, Helvetica, sans-serif;
@@ -13,10 +17,10 @@
 		width: 500px;	
 	}
 	
-	#flex-logo
+	#logo
 	{
-		width: 5%;
-		height: 5%;
+		width: 50px;
+		height: 50px;
 	}
 	
 	#flex-container-header
@@ -26,7 +30,7 @@
 		text-align: center;
 	}
 	
-	#flex-container-nav
+	#flex-container-nav-PC
 	{
 		display: flex;
 		justify-content: center;
@@ -36,6 +40,11 @@
 	{
 		list-style-type: none;
 		margin-bottom: 3em;
+	}
+	
+	#flex-container-nav-MOBILE
+	{
+		display: none;
 	}
 	
 	#flexParent
@@ -60,6 +69,7 @@
 		flex-direction: column;
 		margin-left: 50px;
 		margin-right: 50px;
+		width: auto;
 	}
 	
 	#pic1, #pic2, #pic3
@@ -67,9 +77,14 @@
 		float: right;
 	}
 	
-	#flexChildAside
+	#flexChildAsidePC
 	{
 		font-size: 15px;
+	}
+	
+	#flexChildAsideTABLET
+	{
+		display: none;
 	}
 	
 	#author-footer
@@ -104,12 +119,9 @@
 		text-decoration: none;
 	}
 	
-	.flexVideo
+	.flexVideoPC
 	{
-		border-width: 10px; 
-		border-color: rgb(187, 9, 9) ;
-		border-style: solid;
-		margin-bottom: 20px;
+		width: auto;
 	}
 	
 	.article1
@@ -150,6 +162,11 @@
 	.product-links:visited
 	{
 		color: #780dff; 
+	}
+	
+	.product-linksMOBILE
+	{
+		display: none;
 	}
 	
 	#cookie-card
@@ -193,12 +210,196 @@
 		transition: background-color 0.4s;
 	}
 	
+	/* -----------------------------PC PRODUCT PAGE------------------------------- */
+	/* -----------------------------PC PRODUCT PAGE------------------------------- */
+	/* -----------------------------PC PRODUCT PAGE------------------------------- */
+	
+	#grid-container-product
+	{
+		display: grid;
+		grid-template-areas:
+		
+		'logoTag logoTag logoTag'
+		'productHeader productHeader productHeader'
+		'navTag navTag navTag'
+		'article2Tag article1Tag article3Tag'
+		'article5Tag article6Tag article4Tag'
+		'aside1Tag aside2Tag aside3Tag'
+		'footer footer footer'
+		
+		;
+	}
+	
+	#grid-logo
+	{
+		width: 50px;
+		height: 50px;
+		grid-area: logoTag;
+	}
+	
+	#productHeader
+	{
+		background-color: green;
+		grid-area: productHeader;
+	}
+	
+	#nav
+	{
+		background-color: yellow;
+		grid-area: navTag
+	}
+	
+	#author-footer
+	{
+		background-color: black;
+		color: white;
+		grid-area: footer;
+	}
+	
+	.productArticle1 
+	{ 
+		backgro	und-color: blue; 
+		grid-area: article1Tag; 
+	} 
+	
+	.productArticle2
+	{
+		background-color: red;
+		grid-area: article2Tag;
+	} 
+	
+	.productArticle3
+	{
+		background-color: aqua;
+		grid-area: article3Tag;
+	} 
+	
+	.productArticle4
+	{
+		background-color: pink;
+		grid-area: article4Tag;
+	}
+	
+	.productArticle5
+	{
+		background-color: lightgreen;
+		grid-area: article5Tag;
+	}
+	
+	.productArticle6
+	{
+		background-color: lightblue;
+		grid-area: article6Tag;
+	}
+	
+	.aside1
+	{
+		width: 500px;
+		background-color: #cca2ea;
+		grid-area: aside1Tag;
+	}
+	
+	.aside2
+	{
+		width: 500px;
+		background-color: #eaa2a2;
+		grid-area: aside2Tag;
+	}
+	
+	.aside3
+	{
+		width: 500px;
+		background-color: #ead0a2;
+		grid-area: aside3Tag;
+	}
+	
+	.asidePhoto1, .asidePhoto2, .asidePhoto3
+	{
+		width: 500px;
+		height: 500px;
+	}
+	
+	
+	/* -----------------------------PC PRICING PAGE------------------------------- */
+	/* -----------------------------PC PRICING PAGE------------------------------- */
+	/* -----------------------------PC PRICING PAGE------------------------------- */
+	
+	
+	
+	/* -----------------------------PC CONTACT PAGE------------------------------- */
+	/* -----------------------------PC CONTACT PAGE------------------------------- */
+	/* -----------------------------PC CONTACT PAGE------------------------------- */
+	
+	#grid-container-contact
+	{
+		display: grid;
+		
+		grid-template-areas:
+		'logoTag logoTag logoTag'
+		'contactHeaderTag contactHeaderTag contactHeaderTag'
+		'navTag navTag navTag'
+		'contactFieldsetTag contactFieldsetTag aside1-ContactTag'
+		'contactFieldsetTag contactFieldsetTag aside2-ContactTag'
+		'contactFieldsetTag contactFieldsetTag aside3-ContactTag'
+		'footer footer footer'
+		
+		;
+	}
+	
+	#contactHeader
+	{
+		background-color: green;
+		grid-area: contactHeaderTag;
+	}
+	
+	#navContact
+	{
+		grid-area: navTagContact;
+	}
+	
+	#contactFieldset
+	{
+		background-color: blue;
+		grid-area: contactFieldsetTag;
+	}
+	
+	.asidePhoto1-Contact, .asidePhoto2-Contact, .asidePhoto3-Contact
+	{
+		width: 225px;
+		height: 225px;
+	}
+	
+	.aside1-Contact
+	{
+		background-color: #cca2ea;
+		grid-area: aside1-ContactTag;
+	}
+	
+	.aside2-Contact
+	{
+		background-color: #eaa2a2;
+		grid-area; aside2-ContactTag;
+	}
+	
+	.aside3-Contact
+	{
+		background-color: #eaa2a2;
+		grid-area; aside3-ContactTag;
+	}
+	
+	
+	
 }
 
  /*TABLET */
 
 @media screen and (min-width: 481px) and (max-width: 1279px)
 {
+	
+	/* -----------------------------TABLET INDEX PAGE------------------------------- */
+	/* -----------------------------TABLET INDEX PAGE------------------------------- */
+	/* -----------------------------TABLET INDEX PAGE------------------------------- */
+	
 	body
 	{
 		font-family: Arial, Helvetica, sans-serif;
@@ -210,7 +411,7 @@
 		width: 300px;	
 	}
 	
-	#flex-logo
+	#logo
 	{
 		width: 5%;
 		height: 5%;
@@ -223,7 +424,7 @@
 		text-align: center;
 	}
 	
-	#flex-container-nav
+	#flex-container-nav-PC
 	{
 		display: flex;
 		justify-content: center;
@@ -233,6 +434,11 @@
 	{
 		list-style-type: none;
 		margin-bottom: 3em;
+	}
+	
+	#flex-container-nav-MOBILE
+	{
+		display: none;
 	}
 	
 	#flexParent
@@ -255,8 +461,9 @@
 	{
 		display: flex;
 		flex-direction: column;
-		margin-left: 50px;
-		margin-right: 50px;
+		margin-left: 18px;
+		margin-right: 18px;
+		width: auto;
 	}
 	
 	#pic1, #pic2, #pic3
@@ -264,9 +471,15 @@
 		float: left;
 	}
 	
-	#flexChildAside
+	#flexChildAsideTABLET
 	{
-		font-size: 15px;
+		background-color: green;
+		margin-bottom: 30px;
+	}
+	
+	#flexChildAsidePC
+	{
+		display: none;
 	}
 	
 	#author-footer
@@ -301,12 +514,9 @@
 		text-decoration: none;
 	}
 	
-	.flexVideo
+	.flexVideoPC
 	{
-		border-width: 10px; 
-		border-color: rgb(187, 9, 9) ;
-		border-style: solid;
-		margin-bottom: 20px;
+		width: auto;
 	}
 	
 	.article1
@@ -325,6 +535,11 @@
 	{
 		background-color:  #abf59f;
 		padding: 10px;
+	}
+	
+	.articleFooters
+	{
+		display: none;
 	}
 	
 	.caption
@@ -389,29 +604,206 @@
 		cursor: pointer;
 		transition: background-color 0.4s;
 	}
+	
+	/* -----------------------------TABLET PRODUCT PAGE------------------------------- */
+	/* -----------------------------TABLET PRODUCT PAGE------------------------------- */
+	/* -----------------------------TABLET PRODUCT PAGE------------------------------- */
+	
+	#grid-container-product
+	{
+		display: grid;
+		grid-template-areas:
+		
+		'logoTag logoTag'
+		'productHeader productHeader'
+		'navTag navTag'
+		'article1Tag article2Tag'
+		'article3Tag article5Tag'
+		'article6Tag article6Tag'
+		'aside1Tag aside2Tag'
+		'footer footer'
+		
+		;
+	}
+	
+	#grid-logo
+	{
+		width: 50px;
+		height: 50px;
+		grid-area: logoTag;
+	}
+	
+	#productHeader
+	{
+		background-color: green;
+		grid-area: productHeader;
+	}
+	
+	#nav
+	{
+		background-color: yellow;
+		grid-area: navTag
+	}
+	
+	#author-footer
+	{
+		background-color: black;
+		color: white;
+		grid-area: footer;
+	}
+	
+	.productArticle1 
+	{ 
+		background-color: blue; 
+		grid-area: article1Tag; 
+	} 
+	
+	.productArticle2
+	{
+		background-color: red;
+		grid-area: article2Tag;
+	} 
+	
+	.productArticle3
+	{
+		background-color: aqua;
+		grid-area: article3Tag;
+	} 
+	
+	.productArticle4
+	{
+		display: none;
+		background-color: pink;
+		grid-area: article4Tag;
+	}
+	
+	.productArticle5
+	{
+		background-color: lightgreen;
+		grid-area: article5Tag;
+	}
+	
+	.productArticle6
+	{
+		background-color: lightblue;
+		grid-area: article6Tag;
+	}
+	
+	.aside1
+	{
+		width: 500px;
+		background-color: #cca2ea;
+		grid-area: aside1Tag;
+	}
+	
+	.aside2
+	{
+		width: 500px;
+		background-color: #eaa2a2;
+		grid-area: aside2Tag;
+	}
+	
+	.aside3
+	{
+		display: none;
+		width: 500px;
+		background-color: #ead0a2;
+		grid-area: aside3Tag;
+	}
+	
+	.asidePhoto1, .asidePhoto2, .asidePhoto3
+	{
+		width: 500px;
+		height: 500px;
+	}
+	
+	
+	/* -----------------------------TABLET PRICING PAGE------------------------------- */
+	/* -----------------------------TABLET PRICING PAGE------------------------------- */
+	/* -----------------------------TABLET PRICING PAGE------------------------------- */
+	
+	/* -----------------------------TABLET CONTACT PAGE------------------------------- */
+	/* -----------------------------TABLET CONTACT PAGE------------------------------- */
+	/* -----------------------------TABLET CONTACT PAGE------------------------------- */
 }
 
 /* /* MOBILE */ 
 
 @media screen and (max-width: 480px)
 {
+	
+	/* -----------------------------MOBILE INDEX PAGE------------------------------- */
+	/* -----------------------------MOBILE INDEX PAGE------------------------------- */
+	/* -----------------------------MOBILE INDEX PAGE------------------------------- */
+	
 	body
 	{
 		font-family: Arial, Helvetica, sans-serif;
-		background-color: #d9bbff ;
+		background-color: #white;
 	}
 	
-	#flex-container-header
+	img
+	{
+		width: 300px;	
+	}
+	
+	#logo
+	{
+		width: 5%;
+		height: 5%;
+	}
+	
+	#flex-container-nav-PC
+	{
+		display: none;
+	}
+	
+	#flexParent
+	{
+		display: flex;
+	}
+	
+	#flexChildProducts
 	{
 		display: flex;
 		flex-direction: column;
-		text-align: center;
 	}
 	
-	.flex-logo
+	#flexChild
 	{
-		width: 35px;
-		height: 35px;
+		display: flex;
+	}
+	
+	#flexGrandChild
+	{
+		display: flex;
+		flex-direction: column;
+		margin-left: 10px;
+		margin-right: 10px;
+		width: auto;
+	}
+	
+	#pic1, #pic2, #pic3
+	{
+		float: left;
+	}
+	
+	#flexChildAsideTABLET
+	{
+		background-color: green;
+		margin-bottom: 30px;
+	}
+	
+	#flexChildAsidePC
+	{
+		display: none;
+	}
+	
+	#author-footer
+	{
+		background-color: black;
+		color: white;
+		text-align: center;
 	}
 	
 	.flex-header1
@@ -422,30 +814,246 @@
 		margin-bottom: 0.5em;
 	}
 	
-	.flex-img-logo
-	{
-		width: 35px;
-		height: 35px;
-		justify-content: flex-start;
-	}
-	
 	.flex-header2
 	{
 		background-color: #000000;
-		color: white;
+		color: #FFF;
 		padding: 5px;
 		margin-top: 0;
 	}
-}
-
-
-
-.flexParent
-{
-	display: flex;
-}
-
-.flexParent > .flexChild > .flexGrandkid
-{
-	float: right;
+	
+	.flex-list-nav
+	{
+		background-color: #4e7198;
+		color: white;
+		padding: 15px;
+		margin: 1em;
+		text-decoration: none;
+	}
+	
+	.flexVideoPC
+	{
+		display: none;
+	}
+	
+	.article1
+	{
+		background-color: #f9e79f;
+		padding: 10px;
+	}
+	
+	.article2
+	{
+		background-color:  #c59ff5; 
+		padding: 10px;
+	}
+	
+	.article3
+	{
+		background-color:  #abf59f;
+		padding: 10px;
+	}
+	
+	.articleFooters
+	{
+		display: none;
+	}
+	
+	.caption
+	{
+		width: 150px;
+		clear: both;
+		float: left;
+	}
+	
+	.product-links:link
+	{
+		color: #13b8ff;
+	}
+	
+	.product-links:hover
+	{
+		color: white;
+	}
+	
+	.product-links:visited
+	{
+		color: #780dff; 
+	}
+	
+	#cookie-card
+	{
+		position: relative;
+		padding: 1.5em;
+		font-family: sans-serif;
+		position: fixed;
+		bottom: 2em;
+		right: 2em;
+		width: 300px;
+		color: #FFF;
+		background-color: #FA0;
+		opacity: 50%;
+	}
+	
+	.cookie-title
+	{
+		font-size: 1.6em;
+		letter-spacing: 0.4px;
+		margin-bottom: 0.5em;
+		z-index: 9999;
+	}
+	
+	.cookie-info
+	{
+		line-height: 1.4em;
+		letter-spacing: 0.4px;
+		margin-bottom: 2em;
+	}
+	
+	.cookie-cta
+	{
+		border: none;
+		outline: none;
+		padding: 0.8em 1.5em;
+		margin-right: 0.5em;
+		font-size: 1.1em;
+		font-weight: bold;
+		cursor: pointer;
+		transition: background-color 0.4s;
+	}
+	
+	/* -----------------------------MOBILE PRODUCT PAGE------------------------------- */
+	/* -----------------------------MOBILE PRODUCT PAGE------------------------------- */
+	/* -----------------------------MOBILE PRODUCT PAGE------------------------------- */
+	
+	#grid-container-tablet
+	{
+		display: grid;
+		grid-template-areas:
+		
+		'productHeader productHeader'
+		'navTag navTag'
+		'article5Tag article5Tag'
+		'article3Tag article3Tag'
+		'article2Tag article2Tag'
+		'article1Tag article1Tag'
+		'aside1Tag aside1Tag'
+		'aside2Tag aside2Tag'
+		'aside3Tag aside3Tag'
+		'footer footer'
+		
+		;
+	}
+	
+	#grid-logo
+	{
+		display: none;
+		width: 50px;
+		height: 50px;
+		grid-area: logoTag;
+	}
+	
+	#productHeader
+	{
+		background-color: green;
+		grid-area: productHeader;
+	}
+	
+	#nav
+	{
+		background-color: yellow;
+		grid-area: navTag
+	}
+	
+	#author-footer
+	{
+		background-color: black;
+		color: white;
+		grid-area: footer;
+	}
+	
+	.productArticle1 
+	{ 
+		background-color: blue; 
+		grid-area: article1Tag; 
+	} 
+	
+	.productArticle2
+	{
+		background-color: red;
+		grid-area: article2Tag;
+	} 
+	
+	.productArticle3
+	{
+		background-color: aqua;
+		grid-area: article3Tag;
+	} 
+	
+	.productArticle4
+	{
+		display: none;
+		background-color: pink;
+		grid-area: article4Tag;
+	}
+	
+	.productArticle5
+	{
+		background-color: lightgreen;
+		grid-area: article5Tag;
+	}
+	
+	.productArticle6
+	{
+		display: none;
+		background-color: lightblue;
+		grid-area: article6Tag;
+	}
+	
+	.aside1
+	{
+		width: 500px;
+		background-color: #cca2ea;
+		grid-area: aside1Tag;
+	}
+	
+	.aside2
+	{
+		width: 500px;
+		background-color: #eaa2a2;
+		grid-area: aside2Tag;
+	}
+	
+	.aside3
+	{
+		width: 500px;
+		background-color: #ead0a2;
+		grid-area: aside3Tag;
+	}
+	
+	.asidePhoto1
+	{
+		width: 500px;
+		height: 500px;
+	}
+	
+	.asidePhoto2
+	{
+		width: 500px;
+		height: 500px;
+	}
+	
+	.asidePhoto3
+	{
+		width: 500px;
+		height: 500px;
+	}
+	
+	/* -----------------------------MOBILE PRICING PAGE------------------------------- */
+	/* -----------------------------MOBILE PRICING PAGE------------------------------- */
+	/* -----------------------------MOBILE PRICING PAGE------------------------------- */
+	
+	/* -----------------------------MOBILE CONTACT PAGE------------------------------- */
+	/* -----------------------------MOBILE CONTACT PAGE------------------------------- */
+	/* -----------------------------MOBILE CONTACT PAGE------------------------------- */
 }

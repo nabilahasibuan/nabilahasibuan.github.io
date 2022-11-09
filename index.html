@@ -22,18 +22,26 @@
 	<!-- THIS IS WHERE THE HEADER AND NAV BEGINS -->
 	
 		<header id="flex-container-header">
-		
-			<img id="flex-logo" src="img/logo.png" title="Logo" alt="website logo"></img>
+			
+			<img id="logo" src="img/logo.png" title="Logo" alt="website logo"></img>
 			<h1 class="flex-header1"></img>Tech with Sports</h1>
 			<h2 class="flex-header2">Witness the change in Sports</h2>
 			
-			<nav id="flex-container-nav">
+			<nav id="flex-container-nav-PC">
 				<ul id="flex-ul">
 					<li>
-						<a href="#" class="flex-list-nav">Product</a>
-						<a href="#" class="flex-list-nav">Pricing</a>
-						<a href="#" class="flex-list-nav">Contact</a>
+						<a href="product.html" class="flex-list-nav">Product</a>
+						<a href="pricing.html" class="flex-list-nav">Pricing</a>
+						<a href="contact.html" class="flex-list-nav">Contact</a>
 					</li>
+				</ul>
+			</nav>
+			
+			<nav id="flex-container-nav-MOBILE">
+				<ul id="flex-ul">
+					<li><a href="product.html">Product</a></li>
+					<li><a href="pricing.html">Pricing</a></li>
+					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</nav>
 			
@@ -45,7 +53,20 @@
 			
 			<section id="flexChildProducts">
 			
-				<video class="flexVideo" width="950" height="534.38" loop autoplay muted>
+				<section id="flexChildAsideTABLET">
+					<aside>
+						<h3>You should visit these places!</h3>
+						<ol>
+							<li>Mykonos, Greece</li>
+							<li>Musandam Peninsula, Oman</li>
+							<li>Reykjavik, Iceland</li>
+							<li>Budelli, Italy</li>
+							<li>Seoul, South Korea</li>
+						</ol>
+					</aside>
+				</section>
+			
+				<video class="flexVideoPC" width="460" height="258.75" loop autoplay muted>
 					<source src="vid/Home-promotion-video.mp4" type="video/mp4">
 					<source src="vid/Home-promotion-video.ogg" type="video/ogg">
 				</video>
@@ -66,6 +87,11 @@
 								<p>
 									Edge Detector from Hawk-Eye Innovations is a computer vision system that visually tracks the trajectory of the ball and displays a profile of its statistically most likely path as a moving image in a variety of sports. Instead of relying on the players instincts, they use this technology to decide fairly whether or no the ball hit the line. The cameras capture the ball during the ball transistion at a rate of up to 340 frames per second. At the same time, an algorithm processes and determines the ball's trajectory using this information. 
 								</p>
+								
+								<h4 class="product-linksMOBILE">
+									<a href="https://www.hawkeyeinnovations.com" target="_blank" class="product-links"><strong>More info</strong></a>
+								</h4>
+								
 								<figure>
 									<a href="https://www.hawkeyeinnovations.com/" target="_blank">
 									<img id="pic1" src="img/edgedetector.jpg" title="Edge Detector" alt="edge detector in tennis">
@@ -73,7 +99,7 @@
 									<figcaption class="caption">&copy; How It Works</figcaption>
 								</figure>
 								
-								<footer>
+								<footer class="articleFooters">
 									<a href="https://www.hawkeyeinnovations.com" target="_blank" class="product-links"><strong>More info</strong></a>
 								</footer>
 									
@@ -89,6 +115,10 @@
 								<p>
 									A virtual environment that is interactive and immerses you in a new world through the use of cameras, sensors, joysticks, or costumes is known a Virtual Reality. It is used to create realistic rugby simulations of high balls, first-phase attacks, and line-outs. Thiscan help gamers improve their visualization abillities and cognitive learning. Virtual things and characters can interact with eachother, allowing the two worlds to communicate with each other.
 								</p>
+								
+								<h4 class="product-linksMOBILE">
+									<a href="https://www.coolblue.nl/en/vr-gear" target="_blank" class="product-links"><strong>Order product</strong></a>
+								</h4>
 							
 								<figure>
 									<a href="https://www.playtouchrugbyleague.co.uk/how-is-vr-being-utilized-in-rugby/" target="_blank">
@@ -97,7 +127,7 @@
 									<figcaption class="caption">&copy; Sport Techie</figcaption>
 								</figure>
 								
-								<footer>
+								<footer class="articleFooters">
 									<a href="https://www.coolblue.nl/en/vr-gear" target="_blank" class="product-links"><strong>Order product</strong></a>
 								</footer>
 								
@@ -113,6 +143,10 @@
 							<p>
 								Whenever we watch a sport, we frequently see several camera angles. The most incredible is when the camera flys and you can see the entirestadium or even a close-up of your favorite athlete. It is all because of flying drones and spider cams that are operated by TV broadcasters, who provide breathtaking images for our televisions. They are used to take pictures from very near to the ground to the skyline and offer a 36-degree viewing angle. 
 							</p>
+							
+							<h4 class="product-linksMOBILE">
+								<a href="https://www.coolblue.nl/en/drones?redirect=drones" target="_blank" class="product-links"><strong>Order product</strong></a>
+							</h4>
 						
 							<figure> 
 								<a href="https://droneland.nl/drones" target="_blank">
@@ -121,13 +155,13 @@
 								<figcaption class="caption">&copy; Rude Baguette</figcaption> 
 							</figure>
 							
-							<footer>
+							<footer class="articleFooters">
 								<a href="https://www.coolblue.nl/en/drones?redirect=drones" target="_blank" class="product-links"><strong>Order product</strong></a>
 							</footer>
 							
 						</article>
 					</section>	
-					<section id="flexChildAside">
+					<section id="flexChildAsidePC">
 				
 						<aside>
 							<h3>You should visit these places!</h3>
@@ -144,8 +178,6 @@
 				
 				</section>
 				
-				
-			
 			</section>
 	
 		</section>
