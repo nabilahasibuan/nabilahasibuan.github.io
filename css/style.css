@@ -30,19 +30,18 @@
 		text-align: center;
 	}
 	
+	#flex-container-header h1
+	{
+		background-color: green;
+	}
+	
 	#flex-container-nav-PC
 	{
 		display: flex;
-		justify-content: center;
 	}
 	
-	#flex-ul
-	{
-		list-style-type: none;
-		margin-bottom: 3em;
-	}
 	
-	#flex-container-nav-MOBILE
+	#nav-MOBILE
 	{
 		display: none;
 	}
@@ -110,36 +109,30 @@
 		margin-top: 0;
 	}
 	
-	.flex-list-nav
-	{
-		background-color: #4e7198;
-		color: white;
-		padding: 15px;
-		margin: 1em;
-		text-decoration: none;
-	}
-	
 	.flexVideoPC
 	{
-		width: auto;
+		width: 35%;
+		height: 35%;
+	}
+	
+	.article1, .article2, .article3
+	{
+		padding: 10px;
 	}
 	
 	.article1
 	{
 		background-color: #f9e79f;
-		padding: 10px;
 	}
 	
 	.article2
 	{
 		background-color:  #c59ff5; 
-		padding: 10px;
 	}
 	
 	.article3
 	{
 		background-color:  #abf59f;
-		padding: 10px;
 	}
 	
 	.caption
@@ -181,6 +174,7 @@
 		color: #FFF;
 		background-color: #FA0;
 		opacity: 50%;
+		z-index: 9999;
 	}
 	
 	.cookie-title
@@ -188,7 +182,6 @@
 		font-size: 1.6em;
 		letter-spacing: 0.4px;
 		margin-bottom: 0.5em;
-		z-index: 9999;
 	}
 	
 	.cookie-info
@@ -239,14 +232,23 @@
 	
 	#productHeader
 	{
-		background-color: green;
 		grid-area: productHeader;
 	}
 	
-	#nav
+	#productHeader h1
+	{
+		background-color: green;
+	}
+	
+	#productHeader h2
+	{
+		background-color: green;
+	}
+	
+	#nav-product-PC
 	{
 		background-color: yellow;
-		grid-area: navTag
+		grid-area: navTag;
 	}
 	
 	#author-footer
@@ -258,7 +260,7 @@
 	
 	.productArticle1 
 	{ 
-		backgro	und-color: blue; 
+		background-color: blue; 
 		grid-area: article1Tag; 
 	} 
 	
@@ -292,23 +294,25 @@
 		grid-area: article6Tag;
 	}
 	
-	.aside1
+	.aside1, .aside2, .aside3
 	{
 		width: 500px;
+	}
+	
+	.aside1
+	{
 		background-color: #cca2ea;
 		grid-area: aside1Tag;
 	}
 	
 	.aside2
 	{
-		width: 500px;
 		background-color: #eaa2a2;
 		grid-area: aside2Tag;
 	}
 	
 	.aside3
 	{
-		width: 500px;
 		background-color: #ead0a2;
 		grid-area: aside3Tag;
 	}
@@ -324,6 +328,73 @@
 	/* -----------------------------PC PRICING PAGE------------------------------- */
 	/* -----------------------------PC PRICING PAGE------------------------------- */
 	
+	#grid-container-pricing
+	{
+		display: grid;
+		
+		grid-template-areas:
+		'logoTag logoTag logoTag'
+		'pricingHeader pricingHeader pricingHeader'
+		'pricingNav pricingNav pricingNav'
+		'pricingTable pricingTable asideOneTag'
+		'pricingTable pricingTable asideTwoTag'
+		'pricingTable pricingTable asideThreeTag'
+		'footer footer footer'
+		
+		;
+	}
+	
+	#pricingHeader
+	{
+		background-color: green;
+		grid-area: pricingHeader;
+	}
+	
+	#nav-pricing-PC
+	{
+		background-color: yellow;
+		grid-area: pricingNav;
+	}
+	
+	#pricingTable
+	{
+		grid-area: pricingTable;
+	}
+	
+	.asideOne, .asideTwo, .asideThree
+	{
+		margin: auto;
+	}
+	
+	.asideOne
+	{
+		background-color: #cca2ea;
+		grid-area: asideOneTag;
+	}
+	
+	.asideTwo
+	{
+		background-color: #eaa2a2;
+		grid-area: asideTwoTag;
+	}
+	
+	.asideThree
+	{
+		background-color: #ead0a2;
+		grid-area: asideThreeTag;
+	}
+	
+	table
+	{
+		border: solid 2px red;
+		height: 800px;
+		width: 950px;
+	}
+	
+	tr
+	{
+		background-color: lightgreen;
+	}
 	
 	
 	/* -----------------------------PC CONTACT PAGE------------------------------- */
@@ -337,11 +408,12 @@
 		grid-template-areas:
 		'logoTag logoTag logoTag'
 		'contactHeaderTag contactHeaderTag contactHeaderTag'
-		'navTag navTag navTag'
+		'navTagContact navTagContact navTagContact'
 		'contactFieldsetTag contactFieldsetTag aside1-ContactTag'
 		'contactFieldsetTag contactFieldsetTag aside2-ContactTag'
 		'contactFieldsetTag contactFieldsetTag aside3-ContactTag'
 		'footer footer footer'
+		
 		
 		;
 	}
@@ -354,6 +426,7 @@
 	
 	#navContact
 	{
+		background-color: yellow;
 		grid-area: navTagContact;
 	}
 	
@@ -378,13 +451,13 @@
 	.aside2-Contact
 	{
 		background-color: #eaa2a2;
-		grid-area; aside2-ContactTag;
+		grid-area: aside2-ContactTag;
 	}
 	
 	.aside3-Contact
 	{
 		background-color: #eaa2a2;
-		grid-area; aside3-ContactTag;
+		grid-area: aside3-ContactTag;
 	}
 	
 	
@@ -424,21 +497,14 @@
 		text-align: center;
 	}
 	
+	#nav-MOBILE
+	{
+		display: none;
+	}
+	
 	#flex-container-nav-PC
 	{
 		display: flex;
-		justify-content: center;
-	}
-	
-	#flex-ul
-	{
-		list-style-type: none;
-		margin-bottom: 3em;
-	}
-	
-	#flex-container-nav-MOBILE
-	{
-		display: none;
 	}
 	
 	#flexParent
@@ -505,36 +571,25 @@
 		margin-top: 0;
 	}
 	
-	.flex-list-nav
-	{
-		background-color: #4e7198;
-		color: white;
-		padding: 15px;
-		margin: 1em;
-		text-decoration: none;
-	}
-	
 	.flexVideoPC
 	{
-		width: auto;
+		width: 35%;
+		height: 35%;
 	}
 	
 	.article1
 	{
 		background-color: #f9e79f;
-		padding: 10px;
 	}
 	
 	.article2
 	{
 		background-color:  #c59ff5; 
-		padding: 10px;
 	}
 	
 	.article3
 	{
 		background-color:  #abf59f;
-		padding: 10px;
 	}
 	
 	.articleFooters
@@ -564,46 +619,6 @@
 		color: #780dff; 
 	}
 	
-	#cookie-card
-	{
-		position: relative;
-		padding: 1.5em;
-		font-family: sans-serif;
-		position: fixed;
-		bottom: 2em;
-		right: 2em;
-		width: 300px;
-		color: #FFF;
-		background-color: #FA0;
-		opacity: 50%;
-	}
-	
-	.cookie-title
-	{
-		font-size: 1.6em;
-		letter-spacing: 0.4px;
-		margin-bottom: 0.5em;
-		z-index: 9999;
-	}
-	
-	.cookie-info
-	{
-		line-height: 1.4em;
-		letter-spacing: 0.4px;
-		margin-bottom: 2em;
-	}
-	
-	.cookie-cta
-	{
-		border: none;
-		outline: none;
-		padding: 0.8em 1.5em;
-		margin-right: 0.5em;
-		font-size: 1.1em;
-		font-weight: bold;
-		cursor: pointer;
-		transition: background-color 0.4s;
-	}
 	
 	/* -----------------------------TABLET PRODUCT PAGE------------------------------- */
 	/* -----------------------------TABLET PRODUCT PAGE------------------------------- */
@@ -639,10 +654,10 @@
 		grid-area: productHeader;
 	}
 	
-	#nav
+	#nav-product-PC
 	{
 		background-color: yellow;
-		grid-area: navTag
+		grid-area: navTag;
 	}
 	
 	#author-footer
@@ -689,16 +704,15 @@
 		grid-area: article6Tag;
 	}
 	
+	
 	.aside1
 	{
-		width: 500px;
 		background-color: #cca2ea;
 		grid-area: aside1Tag;
 	}
 	
 	.aside2
 	{
-		width: 500px;
 		background-color: #eaa2a2;
 		grid-area: aside2Tag;
 	}
@@ -706,25 +720,185 @@
 	.aside3
 	{
 		display: none;
-		width: 500px;
-		background-color: #ead0a2;
-		grid-area: aside3Tag;
 	}
 	
-	.asidePhoto1, .asidePhoto2, .asidePhoto3
+	
+	/* -----------------------------TABLET PRICING PAGE------------------------------- */
+	/* -----------------------------TABLET PRICING PAGE------------------------------- */
+	/* -----------------------------TABLET PRICING PAGE------------------------------- */
+	
+	
+	#grid-container-pricing
 	{
-		width: 500px;
-		height: 500px;
+		display: grid;
+		
+		grid-template-areas:
+		'logoTag logoTag'
+		'pricingHeader pricingHeader'
+		'pricingNav pricingNav'
+		'pricingTable pricingTable'
+		'asideTwoTag asideThreeTag'
+		'footer footer'
+		
+		;
+	}
+	
+	#pricingHeader
+	{
+		background-color: green;
+		grid-area: pricingHeader;
+	}
+	
+	#nav-pricing-PC
+	{
+		background-color: yellow;
+		grid-area: pricingNav;
+	}
+	
+	#pricingTable
+	{
+		grid-area: pricingTable;
+	}
+	
+	.asideTwo, .asideThree
+	{
+		margin: auto;
+	}
+	
+	.asideOne
+	{
+		display: none;
+	}
+	
+	.asideTwo
+	{
+		background-color: #eaa2a2;
+		grid-area: asideTwoTag;
+	}
+	
+	.asideThree
+	{
+		background-color: #ead0a2;
+		grid-area: asideThreeTag;
+	}
+	
+	table
+	{
+		border: solid 2px red;
+		height: 800px;
+		width: 950px;
+	}
+	
+	tr
+	{
+		background-color: lightgreen;
 	}
 	
 	
-	/* -----------------------------TABLET PRICING PAGE------------------------------- */
-	/* -----------------------------TABLET PRICING PAGE------------------------------- */
-	/* -----------------------------TABLET PRICING PAGE------------------------------- */
+	/* -----------------------------TABLET CONTACT PAGE------------------------------- */
+	/* -----------------------------TABLET CONTACT PAGE------------------------------- */
+	/* -----------------------------TABLET CONTACT PAGE------------------------------- */
 	
-	/* -----------------------------TABLET CONTACT PAGE------------------------------- */
-	/* -----------------------------TABLET CONTACT PAGE------------------------------- */
-	/* -----------------------------TABLET CONTACT PAGE------------------------------- */
+	#grid-container-contact
+	{
+		display: grid;
+		
+		grid-template-areas:
+		'logoTag logoTag'
+		'contactHeaderTag contactHeaderTag'
+		'navTagContact navTagContact'
+		'contactFieldsetTag aside1-ContactTag'
+		'contactFieldsetTag aside2-ContactTag'
+		'contactFieldsetTag aside3-ContactTag'
+		'footer footer'
+		
+		
+		;
+	}
+	
+	#contactHeader
+	{
+		background-color: green;
+		grid-area: contactHeaderTag;
+	}
+	
+	#navContact
+	{
+		background-color: yellow;
+		grid-area: navTagContact;
+	}
+	
+	#contactFieldset
+	{
+		margin: auto;
+		background-color: blue;
+		grid-area: contactFieldsetTag;
+	}
+	
+	.asidePhoto1-Contact, .asidePhoto2-Contact, .asidePhoto3-Contact
+	{
+		width: 225px;
+		height: 225px;
+	}
+	
+	.aside1-Contact
+	{
+		background-color: #cca2ea;
+		grid-area: aside1-ContactTag;
+	}
+	
+	.aside2-Contact
+	{
+		background-color: #eaa2a2;
+		grid-area: aside2-ContactTag;
+	}
+	
+	.aside3-Contact
+	{
+		background-color: #eaa2a2;
+		grid-area: aside3-ContactTag;
+	}
+	
+	#cookie-card
+	{
+		position: relative;
+		padding: 1.5em;
+		font-family: sans-serif;
+		position: fixed;
+		bottom: 2em;
+		right: 2em;
+		width: 300px;
+		color: #FFF;
+		background-color: #FA0;
+		opacity: 50%;
+		z-index: 9999;
+	}
+	
+	.cookie-title
+	{
+		font-size: 1.6em;
+		letter-spacing: 0.4px;
+		margin-bottom: 0.5em;
+	}
+	
+	.cookie-info
+	{
+		line-height: 1.4em;
+		letter-spacing: 0.4px;
+		margin-bottom: 2em;
+	}
+	
+	.cookie-cta
+	{
+		border: none;
+		outline: none;
+		padding: 0.8em 1.5em;
+		margin-right: 0.5em;
+		font-size: 1.1em;
+		font-weight: bold;
+		cursor: pointer;
+		transition: background-color 0.4s;
+	}
 }
 
 /* /* MOBILE */ 
@@ -739,7 +913,7 @@
 	body
 	{
 		font-family: Arial, Helvetica, sans-serif;
-		background-color: #white;
+		background-color: white;
 	}
 	
 	img
@@ -757,6 +931,151 @@
 	{
 		display: none;
 	}
+	
+/* HAMBURGER MENU */
+	#nav-MOBILE .menu-wrap
+	{
+		position: fixed;
+		top: 0;
+		right: 0;
+		z-index: 1;
+	}
+	
+	#nav-MOBILE .menu-wrap .toggler
+	{
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 2;
+		cursor: pointer;
+		width: 50px;
+		height: 50px;
+		opacity: 0;
+	}
+	
+	#nav-MOBILE .menu-wrap .hamburger
+	{
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 1;
+		width: 60px;
+		height: 60px;
+		padding: 1em;
+		background-color: pink;
+		opacity: 65%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	/* Hamburger Line */
+	#nav-MOBILE .menu-wrap .hamburger > section
+	{
+		position: relative;
+		width: 100%;
+		height: 2px;
+		background-color: white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: all 0.4s ease;
+	}
+	
+	/* Top and bottom lines */
+	#nav-MOBILE .menu-wrap .hamburger > section:before, .menu-wrap .hamburger > section:after
+	{
+		content:'';
+		position: absoulute;
+		z-index: 1;
+		top: -10px; 
+		width: 100;
+		height: 2px; 
+		background: inherit;
+	}
+	
+	/* Moves line down */
+	#nav-MOBILE .menu-wrap .hamburger > section:after
+	{
+		top: 10px;
+	}
+	
+	/* Toggler animate  */
+	#nav-MOBILE .menu-wrap .toggler:checked + .hamburger > section
+	{
+		transform: rotate(135deg);
+	}
+	
+	/* Show menu */
+	#nav-MOBILE .menu-wrap .toggler:checked ~ .menu
+	{
+		visibility: visible;
+	}
+	
+	#nav-MOBILE .menu-wrap .toggler:checked ~ .menu > section
+	{
+		transform: scale(1);
+	}
+	
+	#nav-MOBILE .menu-wrap .toggler:checked ~ .menu > section > nav
+	{
+		opacity: 1;
+		transition: opacity 0.4s ease;
+	}
+	
+	#nav-MOBILE .menu-wrap .menu
+	{
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		visibility: hidden;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	#nav-MOBILE .menu-wrap .menu > section
+	{
+		background: blue;
+		opacity: 65%;
+		border-radius: 50%;
+		width: 200vw;
+		height: 200vw;
+		display: flex;
+		flex: none;
+		align-items: center;
+		justify-content: center;
+		transform: scale(0);
+		transition: all 0.4s ease
+	}
+	
+	#nav-MOBILE .menu-wrap .menu > section > nav 
+	{
+		text-align: center;
+		max-width: 90vw;
+		max-height: 100vh;
+		opacity: 0;
+		transition: opactiy 0.4s ease;
+	}
+
+	#nav-MOBILE .menu-wrap .menu > section > nav > ul > li
+	{
+		list-style: none;
+		color: white;
+		font-size: 1.5em;
+		padding: 1em;
+	}
+	
+	#nav-MOBILE .menu-wrap .menu > section > nav > ul > li > a
+	{
+		color: white;
+		text-decoration: none;
+		transition: color 0.4s ease;
+	}
+/* END HAMBURGER MENU */
 	
 	#flexParent
 	{
@@ -839,19 +1158,16 @@
 	.article1
 	{
 		background-color: #f9e79f;
-		padding: 10px;
 	}
 	
 	.article2
 	{
 		background-color:  #c59ff5; 
-		padding: 10px;
 	}
 	
 	.article3
 	{
 		background-color:  #abf59f;
-		padding: 10px;
 	}
 	
 	.articleFooters
@@ -881,46 +1197,6 @@
 		color: #780dff; 
 	}
 	
-	#cookie-card
-	{
-		position: relative;
-		padding: 1.5em;
-		font-family: sans-serif;
-		position: fixed;
-		bottom: 2em;
-		right: 2em;
-		width: 300px;
-		color: #FFF;
-		background-color: #FA0;
-		opacity: 50%;
-	}
-	
-	.cookie-title
-	{
-		font-size: 1.6em;
-		letter-spacing: 0.4px;
-		margin-bottom: 0.5em;
-		z-index: 9999;
-	}
-	
-	.cookie-info
-	{
-		line-height: 1.4em;
-		letter-spacing: 0.4px;
-		margin-bottom: 2em;
-	}
-	
-	.cookie-cta
-	{
-		border: none;
-		outline: none;
-		padding: 0.8em 1.5em;
-		margin-right: 0.5em;
-		font-size: 1.1em;
-		font-weight: bold;
-		cursor: pointer;
-		transition: background-color 0.4s;
-	}
 	
 	/* -----------------------------MOBILE PRODUCT PAGE------------------------------- */
 	/* -----------------------------MOBILE PRODUCT PAGE------------------------------- */
@@ -932,7 +1208,6 @@
 		grid-template-areas:
 		
 		'productHeader productHeader'
-		'navTag navTag'
 		'article5Tag article5Tag'
 		'article3Tag article3Tag'
 		'article2Tag article2Tag'
@@ -959,10 +1234,9 @@
 		grid-area: productHeader;
 	}
 	
-	#nav
+	#nav-product-PC
 	{
-		background-color: yellow;
-		grid-area: navTag
+		display: none;
 	}
 	
 	#author-footer
@@ -1053,7 +1327,166 @@
 	/* -----------------------------MOBILE PRICING PAGE------------------------------- */
 	/* -----------------------------MOBILE PRICING PAGE------------------------------- */
 	
+	
+	#grid-container-pricing
+	{
+		display: grid;
+		
+		grid-template-areas:
+		'pricingHeader'
+		'pricingTable'
+		'asideOneTag'
+		'asideTwoTag'
+		'asideThreeTag'
+		'footer'
+		
+		;
+	}
+	
+	#pricingHeader
+	{
+		background-color: green;
+		grid-area: pricingHeader;
+	}
+	
+	#nav-pricing-PC
+	{
+		display: none;
+	}
+	
+	#pricingTable
+	{
+		grid-area: pricingTable;
+	}
+	
+	.asideOne
+	{
+		margin: auto;
+		background-color: #cca2ea;
+		grid-area: asideOneTag;
+	}
+	
+	.asideTwo
+	{
+		margin: auto;
+		background-color: #eaa2a2;
+		grid-area: asideTwoTag;
+	}
+	
+	.asideThree
+	{
+		margin: auto;
+		background-color: #ead0a2;
+		grid-area: asideThreeTag;
+	}
+	
+	table
+	{
+		border: solid 2px red;
+		height: 800px;
+		width: 950px;
+	}
+	
+	tr
+	{
+		background-color: lightgreen;
+	}
+	
+	
 	/* -----------------------------MOBILE CONTACT PAGE------------------------------- */
 	/* -----------------------------MOBILE CONTACT PAGE------------------------------- */
 	/* -----------------------------MOBILE CONTACT PAGE------------------------------- */
+	
+	#grid-container-contact
+	{
+		display: grid;
+		
+		grid-template-areas:
+		'contactHeaderTag'
+		'contactFieldsetTag'
+		'aside1-ContactTag'
+		'aside2-ContactTag'
+		'aside3-ContactTag'
+		'footer'
+		
+		;
+	}
+	
+	#contactHeader
+	{
+		background-color: green;
+		grid-area: contactHeaderTag;
+	}
+	
+	#contactFieldset
+	{
+		margin: auto;
+		background-color: blue;
+		grid-area: contactFieldsetTag;
+	}
+	
+	.asidePhoto1-Contact, .asidePhoto2-Contact, .asidePhoto3-Contact
+	{
+		width: 225px;
+		height: 225px;
+	}
+	
+	.aside1-Contact
+	{
+		background-color: #cca2ea;
+		grid-area: aside1-ContactTag;
+	}
+	
+	.aside2-Contact
+	{
+		background-color: #eaa2a2;
+		grid-area: aside2-ContactTag;
+	}
+	
+	.aside3-Contact
+	{
+		background-color: #eaa2a2;
+		grid-area: aside3-ContactTag;
+	}
+	
+	#cookie-card
+	{
+		position: relative;
+		padding: 1.5em;
+		font-family: sans-serif;
+		position: fixed;
+		bottom: 2em;
+		right: 2em;
+		width: 300px;
+		color: #FFF;
+		background-color: #FA0;
+		opacity: 50%;
+		z-index: 9999;
+	}
+	
+	.cookie-title
+	{
+		font-size: 1.6em;
+		letter-spacing: 0.4px;
+		margin-bottom: 0.5em;
+	}
+	
+	.cookie-info
+	{
+		line-height: 1.4em;
+		letter-spacing: 0.4px;
+		margin-bottom: 2em;
+	}
+	
+	.cookie-cta
+	{
+		border: none;
+		outline: none;
+		padding: 0.8em 1.5em;
+		margin-right: 0.5em;
+		font-size: 1.1em;
+		font-weight: bold;
+		cursor: pointer;
+		transition: background-color 0.4s;
+	}
 }

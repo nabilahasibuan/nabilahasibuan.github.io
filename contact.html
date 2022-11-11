@@ -1,12 +1,13 @@
 <!doctype html>
-<html lang="eng">
+<html lang="en">
 	<head>
 		
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="description" content="landing page on WebMarkup Assesment project" />
-		<meta name="keywords" content="landing, page, WebMarkup Assesment, project" />
-		<meta name="author" content="Nabila Hasibuan" />
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="description" content="landing page on WebMarkup Assesment project"/>
+		<meta name="keywords" content="landing, page, WebMarkup Assesment, project"/>
+		<meta name="author" content="Nabila Hasibuan"/>
+		<link rel="icon" href="img/logo.png" type="image/png">
 		<link	
 			rel = "stylesheet"
 			type = "text/css"
@@ -20,7 +21,7 @@
 	
 	<body id="grid-container-contact">
 	
-		<img id="grid-logo" src="img/logo.png" title="Logo" alt="website logo"></img>
+		<img id="grid-logo" src="img/logo.png" title="Logo" alt="website logo"/>
 		
 		<header id="contactHeader">
 		
@@ -29,15 +30,33 @@
 				
 		</header>
 		
-		<nav id="nav">
-			<ul>
-				<li>
-					<a href="index.html">Home</a>
-					<a href="product.html">Product</a>
-					<a href="pricing.html">Pricing</a>
-				</li>
-			</ul>
+		<nav id="navContact">
+					<ul>
+						<li>
+							<a href="index.html">Home</a>
+							<a href="product.html">Product</a>
+							<a href="pricing.html">Pricing</a>
+						</li>
+					</ul>
 		</nav>
+		
+		<section id="nav-MOBILE">
+				<section class="menu-wrap">
+					<input type="checkbox" class="toggler">
+					<section class="hamburger"><section></section></section>
+					<section class="menu">
+						<section>
+							<nav>
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="product.html">Product</a></li>
+									<li><a href="pricing.html">Pricing</a></li>
+								</ul>
+							</nav>
+						</section>
+					</section>
+				</section>
+		</section>
 			
 			<section id="contactFieldset">
 				<article>
@@ -81,31 +100,37 @@
 			
 			<aside class="aside1-Contact">
 				<header>
-					<h3>Tracking Performance</h3>
+					<h3>Fan Engagement</h3>
 				</header>
-				<img class="asidePhoto-1-Contact" src="img/performancetracking.jpg" title="tracking performance" alt="tracking the performance of the ball"></img>
+				<a href="https://www.inholland.nl" target="_blank">
+				<img class="asidePhoto-1-Contact" src="img/fanengagement.jpg" title="Fan Engagement" alt="tech in fan engagement"/>
+				</a>
 			</aside>
 			
 			<aside class="aside2-Contact">
 				<header>
-					<h3>Camera Placement</h3>
+					<h3>Snicko Detector</h3>
 				</header>
-				<img class="asidePhoto2-Contact" src="img/camera.jpg" title="camera placement" alt="where are the cameras"></img>
+				<a href="https://www.inholland.nl" target="_blank">
+				<img class="asidePhoto2-Contact" src="img/snicko.jpg" title="snicko detector" alt="snicko detector for baseball"/>
+				</a>
 			</aside>
 			
 			<aside class="aside3-Contact">
 				<header>
-					<h3>Ball Tracking</h3>
+					<h3>Video Assistence Refree</h3>
 				</header>
-				<img class="asidePhoto3-Contact" src="img/balltracking.jpg" title="ball tracking" alt="tracking the ball"></img> 
+				<a href="https://www.inholland.nl" target="_blank">
+				<img class="asidePhoto3-Contact" src="img/var.jpg" title="var" alt="video assistance refree"/>
+				</a>
 			</aside>
 			
 			<section id="cookie-card">
-				<h3>Cookies card</h3>
-				<p>
+				<h3 class="cookie-title">Cookies card</h3>
+				<p class="cookie-info">
 					By using this website, you automatically accept that we use cookies. <a href="#">Read more</a>
 				</p>
-			<button>Accept all</button> <a href="#">Cookies settings</a>
+			<button class="cookie-cta">Accept all</button> <a href="#">Cookies settings</a>
 			</section>
 			
 			<footer id="author-footer">

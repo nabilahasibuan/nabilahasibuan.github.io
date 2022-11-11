@@ -1,12 +1,13 @@
 <!doctype html>
-<html lang="eng">
+<html lang="en">
 	<head>
 		
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="description" content="landing page on WebMarkup Assesment project" />
-		<meta name="keywords" content="landing, page, WebMarkup Assesment, project" />
-		<meta name="author" content="Nabila Hasibuan" />
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="description" content="landing page on WebMarkup Assesment project"/>
+		<meta name="keywords" content="landing, page, WebMarkup Assesment, project"/>
+		<meta name="author" content="Nabila Hasibuan"/>
+		<link rel="icon" href="img/logo.png" type="image/png">
 		<link	
 			rel = "stylesheet"
 			type = "text/css"
@@ -23,27 +24,37 @@
 	
 		<header id="flex-container-header">
 			
-			<img id="logo" src="img/logo.png" title="Logo" alt="website logo"></img>
-			<h1 class="flex-header1"></img>Tech with Sports</h1>
+			<img id="logo" src="img/logo.png" title="Logo" alt="website logo"/>
+			<h1 class="flex-header1">Tech with Sports</h1>
 			<h2 class="flex-header2">Witness the change in Sports</h2>
 			
 			<nav id="flex-container-nav-PC">
 				<ul id="flex-ul">
 					<li>
-						<a href="product.html" class="flex-list-nav">Product</a>
-						<a href="pricing.html" class="flex-list-nav">Pricing</a>
-						<a href="contact.html" class="flex-list-nav">Contact</a>
+						<a href="product.html">Product</a>
+						<a href="pricing.html">Pricing</a>
+						<a href="contact.html">Contact</a>
 					</li>
 				</ul>
 			</nav>
 			
-			<nav id="flex-container-nav-MOBILE">
-				<ul id="flex-ul">
-					<li><a href="product.html">Product</a></li>
-					<li><a href="pricing.html">Pricing</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
+			<section id="nav-MOBILE">
+				<section class="menu-wrap">
+					<input type="checkbox" class="toggler">
+					<section class="hamburger"><section></section></section>
+					<section class="menu">
+						<section>
+							<nav>
+								<ul>
+									<li><a href="product.html">Product</a></li>
+									<li><a href="pricing.html">Pricing</a></li>
+									<li><a href="contact.html">Contact</a></li>
+								</ul>
+							</nav>
+						</section>
+					</section>
+				</section>
+			</section>
 			
 		</header>
 	
@@ -66,7 +77,7 @@
 					</aside>
 				</section>
 			
-				<video class="flexVideoPC" width="460" height="258.75" loop autoplay muted>
+				<video class="flexVideoPC" loop autoplay muted>
 					<source src="vid/Home-promotion-video.mp4" type="video/mp4">
 					<source src="vid/Home-promotion-video.ogg" type="video/ogg">
 				</video>
@@ -94,7 +105,7 @@
 								
 								<figure>
 									<a href="https://www.hawkeyeinnovations.com/" target="_blank">
-									<img id="pic1" src="img/edgedetector.jpg" title="Edge Detector" alt="edge detector in tennis">
+									<img id="pic1" src="img/edgedetector.jpg" title="Edge Detector" alt="edge detector in tennis"/>
 									</a>
 									<figcaption class="caption">&copy; How It Works</figcaption>
 								</figure>
@@ -122,7 +133,7 @@
 							
 								<figure>
 									<a href="https://www.playtouchrugbyleague.co.uk/how-is-vr-being-utilized-in-rugby/" target="_blank">
-									<img id="pic2" src="img/virtualreality.png" title="Virtual Reality" alt="VR being used for practicing in rugby">
+									<img id="pic2" src="img/virtualreality.png" title="Virtual Reality" alt="VR being used for practicing in rugby"/>
 									</a>
 									<figcaption class="caption">&copy; Sport Techie</figcaption>
 								</figure>
@@ -150,7 +161,7 @@
 						
 							<figure> 
 								<a href="https://droneland.nl/drones" target="_blank">
-								<img id="pic3" src="img/flyingdrones.jpg" title="Flying Drones" alt="flying drones in sports"> 
+								<img id="pic3" src="img/flyingdrones.jpg" title="Flying Drones" alt="flying drones in sports"/>
 								</a>
 								<figcaption class="caption">&copy; Rude Baguette</figcaption> 
 							</figure>
@@ -191,7 +202,11 @@
 			</p>
 			<button class="cookie-cta">Accept all</button> <a href="#">Cookies settings</a>
 		</section>
-		<footer id="author-footer">&copy; Nabila Hasibuan</footer>
+		
+		<footer id="author-footer">
+			&copy; Nabila Hasibuan
+		</footer>
+		
 	</body>
 			
 			
