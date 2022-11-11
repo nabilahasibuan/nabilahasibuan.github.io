@@ -37,6 +37,7 @@
 	
 	#flex-container-nav-PC
 	{
+		background-color: yellow;
 		display: flex;
 	}
 	
@@ -237,12 +238,16 @@
 	
 	#productHeader h1
 	{
+		text-align: center;
 		background-color: green;
+		color: white;
 	}
 	
 	#productHeader h2
 	{
-		background-color: green;
+		text-align: center;
+		background-color: black;
+		color: white;
 	}
 	
 	#nav-product-PC
@@ -346,8 +351,21 @@
 	
 	#pricingHeader
 	{
-		background-color: green;
 		grid-area: pricingHeader;
+	}
+	
+	#pricingHeader h1
+	{
+		text-align: center;
+		background-color: green;
+		color: white;
+	}
+	
+	#pricingHeader h2
+	{
+		text-align: center;
+		background-color: black;
+		color: white;
 	}
 	
 	#nav-pricing-PC
@@ -420,8 +438,21 @@
 	
 	#contactHeader
 	{
-		background-color: green;
 		grid-area: contactHeaderTag;
+	}
+	
+	#contactHeader h1
+	{
+		text-align: center;
+		background-color: green;
+		color: white;
+	}
+	
+	#contactHeader h2
+	{
+		text-align: center;
+		background-color: black;
+		color: white;
 	}
 	
 	#navContact
@@ -504,6 +535,7 @@
 	
 	#flex-container-nav-PC
 	{
+		background-color: yellow;
 		display: flex;
 	}
 	
@@ -650,8 +682,21 @@
 	
 	#productHeader
 	{
-		background-color: green;
 		grid-area: productHeader;
+	}
+	
+	#productHeader h1
+	{
+		text-align: center;
+		background-color: green;
+		color: white;
+	}
+	
+	#productHeader h2
+	{
+		text-align: center;
+		background-color: black;
+		color: white;
 	}
 	
 	#nav-product-PC
@@ -745,8 +790,21 @@
 	
 	#pricingHeader
 	{
-		background-color: green;
 		grid-area: pricingHeader;
+	}
+	
+	#pricingHeader h1
+	{
+		text-align: center;
+		background-color: green;
+		color: white;
+	}
+	
+	#pricingHeader h2
+	{
+		text-align: center;
+		background-color: black;
+		color: white;
 	}
 	
 	#nav-pricing-PC
@@ -818,8 +876,21 @@
 	
 	#contactHeader
 	{
-		background-color: green;
 		grid-area: contactHeaderTag;
+	}
+	
+	#contactHeader h1
+	{
+		text-align: center;
+		background-color: green;
+		color: white;
+	}
+	
+	#contactHeader h2
+	{
+		text-align: center;
+		background-color: black;
+		color: white;
 	}
 	
 	#navContact
@@ -913,7 +984,7 @@
 	body
 	{
 		font-family: Arial, Helvetica, sans-serif;
-		background-color: white;
+		background-color: #DFFCC9;
 	}
 	
 	img
@@ -989,7 +1060,7 @@
 		position: absoulute;
 		z-index: 1;
 		top: -10px; 
-		width: 100;
+		width: 100%;
 		height: 2px; 
 		background: inherit;
 	}
@@ -1058,7 +1129,7 @@
 		max-width: 90vw;
 		max-height: 100vh;
 		opacity: 0;
-		transition: opactiy 0.4s ease;
+		transition: opacity 0.4s ease;
 	}
 
 	#nav-MOBILE .menu-wrap .menu > section > nav > ul > li
@@ -1066,7 +1137,7 @@
 		list-style: none;
 		color: white;
 		font-size: 1.5em;
-		padding: 1em;
+		padding: 1rem;
 	}
 	
 	#nav-MOBILE .menu-wrap .menu > section > nav > ul > li > a
@@ -1230,8 +1301,21 @@
 	
 	#productHeader
 	{
-		background-color: green;
 		grid-area: productHeader;
+	}
+	
+	#productHeader h1
+	{
+		text-align: center;
+		background-color: green;
+		color: white;
+	}
+	
+	#productHeader h2
+	{
+		text-align: center;
+		background-color: black;
+		color: white;
 	}
 	
 	#nav-product-PC
@@ -1345,8 +1429,21 @@
 	
 	#pricingHeader
 	{
-		background-color: green;
 		grid-area: pricingHeader;
+	}
+	
+	#pricingHeader h1
+	{
+		text-align: center;
+		background-color: green;
+		color: white;
+	}
+	
+	#pricingHeader h2
+	{
+		text-align: center;
+		background-color: black;
+		color: white;
 	}
 	
 	#nav-pricing-PC
@@ -1414,8 +1511,21 @@
 	
 	#contactHeader
 	{
-		background-color: green;
 		grid-area: contactHeaderTag;
+	}
+	
+	#contactHeader h1
+	{
+		text-align: center;
+		background-color: green;
+		color: white;
+	}
+	
+	#contactHeader h2
+	{
+		text-align: center;
+		background-color: black;
+		color: white;
 	}
 	
 	#contactFieldset
